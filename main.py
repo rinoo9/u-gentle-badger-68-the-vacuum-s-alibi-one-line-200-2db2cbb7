@@ -5,10 +5,11 @@ the entry deterministically to /output/entry.txt (no trailing newline).
 
 Craft notes: the joke works in a flat sensor-log voice -- a deadpan report
 that treats a crumb as a classified object ("logged it as furniture").
-The surprise turn is the evidence list: legs, movement, speed, each
-plausibly sensor-like, until the punch at the end undercuts it all:
-"I do not chase furniture." The vacuum is not apologising for the miss;
-it is filing an alibi with a policy. The 1-200 character gate is
+The surprise turn is the evidence list: legs, movement, then the escalation
+to legal representation ("it has a lawyer now"), each plausibly sensor-like
+until the punch at the end undercuts it all: "I do not chase furniture."
+The vacuum is not apologising for the miss; it is filing an alibi with a
+policy. The 1-200 character gate is
 enforced at runtime (asserts below) so the entry can never drift past
 the limit on a later edit.
 """
@@ -17,7 +18,7 @@ import os
 
 ENTRY = (
     "Missed the crumb under the table. My sensors logged it as furniture: "
-    "it had legs, it moved, and it outran me. I do not chase furniture."
+    "it had legs, it moved, and it has a lawyer now. I do not chase furniture."
 )
 
 
